@@ -7,7 +7,7 @@ import PortfolioHomepage from './pages/portfolio-homepage';
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter path="/" element={<PortfolioHomepage />}>
       <ErrorBoundary>
       <ScrollToTop />
       <RouterRoutes>

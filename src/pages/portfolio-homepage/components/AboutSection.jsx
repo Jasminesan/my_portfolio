@@ -51,13 +51,15 @@ const AboutSection = ({ language, content }) => {
           </div>
 
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
-              <div className="text-center">
-              <img src="/assets/images/01.jpg" 
-              alt={content?.imageAlt || "Profile image"}
-              className="w-[400px] h-[500px] mx-auto mb-4 rounded-lg object-cover"/>
-                <p className="text-muted-foreground text-sm">
-                  {content?.imageAlt}
+  <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 flex items-center justify-center">
+    <div className="text-center">
+      <img 
+        src="https://drive.google.com/uc?export=view&id=14iXuhmsl98DeEH8Q9kEthTgvkgONUH95" 
+        alt={content?.imageAlt || "Profile image"}
+        className="w-[400px] h-[500px] mx-auto mb-4 rounded-lg object-cover"
+      />
+      <p className="text-muted-foreground text-sm">
+        {content?.imageAlt}
                 </p>
               </div>
             </div>

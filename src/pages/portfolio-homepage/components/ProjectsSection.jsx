@@ -4,19 +4,20 @@ import Image from '../../../components/AppImage';
 
 const ProjectsSection = ({ language, content }) => {
   const [showAll, setShowAll] = useState(false);
-  
  const getProjectImage = (projectId) => {
   const imageMap = {
-    'smart-plug': `${import.meta.env.BASE_URL}assets/images/05.png`,
-    'style-service': `${import.meta.env.BASE_URL}assets/images/03.png`, 
-    'water-detection': `${import.meta.env.BASE_URL}assets/images/04.png`,
-    'MIPS Processor Design': `${import.meta.env.BASE_URL}assets/images/07.png`,
-    'iot-temperature': `${import.meta.env.BASE_URL}assets/images/06.png`,
-    'Football League Database Project': `${import.meta.env.BASE_URL}assets/images/08.png`,
-    'smart-classroom': `${import.meta.env.BASE_URL}assets/images/02.png`
-   };
-   return imageMap?.[projectId] || `${import.meta.env.BASE_URL}assets/images/default.jpg`;
+    'smart-plug': 'https://drive.google.com/file/d/1hXm5Ykc-f-BJ1rur1RcOWTGah9KphdqW/view?usp=sharing',
+    'style-service': 'https://drive.google.com/file/d/1d3amr2WEMMNOH0-dyxaOI_BRp0Nydv9b/view?usp=sharing',
+    'water-detection': 'https://drive.google.com/file/d/1yVjtl0kI875pC1Y0aKz6KuhFT4CpOSs0/view?usp=sharing',
+    'MIPS Processor Design': 'https://drive.google.com/file/d/1LowFxUmXnrpLtQwGoujzejRHGjOe1SVv/view?usp=sharing',
+    'iot-temperature': 'https://drive.google.com/file/d/1pk3S-_6PGF1-sCwjHsNNBNhw5ogLBhag/view?usp=sharing',
+    'Football League Database Project': 'https://drive.google.com/file/d/151JTRTjsPzDI_EYUHD6T8DXUlNWg5Uzi/view?usp=sharing',
+    'smart-classroom': 'https://drive.google.com/file/d/1h2NMc5-1IqItR9sTfyXQbqxzNKIceqjF/view?usp=sharing',
+    'Predicting Accidents During Festivals': 'https://drive.google.com/file/d/1nxQdr02JbEOUQUcPpFBixGshHIHs8u-x/view?usp=sharing'
   };
+  
+  return imageMap[projectId] || 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=300&fit=crop';
+};
 
   
   const getTechIcon = (tech) => {
