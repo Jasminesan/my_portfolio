@@ -5,20 +5,19 @@ import Image from '../../../components/AppImage';
 const ProjectsSection = ({ language, content }) => {
   const [showAll, setShowAll] = useState(false);
   
-  const getProjectImage = (projectId) => {
-    const imageMap = {
-      'smart-plug': '/assets/images/05.png',
-      'style-service': '/assets/images/03.png', 
-      'water-detection': '/assets/images/04.png',
-      'MIPS Processor Design': '/assets/images/07.png',
-      'iot-temperature': '/assets/images/10.png',
-      'Football League Database Project' : '/assets/images/08.png',
-      'Predicting Accidents During Festivals' : '/assets/images/09.png',
-      'smart-classroom': '/assets/images/02.png'
-    };
-    
-    return imageMap?.[projectId] || '/assets/images/default.jpg';
+ const getProjectImage = (projectId) => {
+  const imageMap = {
+    'smart-plug': `${import.meta.env.BASE_URL}assets/images/05.png`,
+    'style-service': `${import.meta.env.BASE_URL}assets/images/03.png`, 
+    'water-detection': `${import.meta.env.BASE_URL}assets/images/04.png`,
+    'MIPS Processor Design': `${import.meta.env.BASE_URL}assets/images/07.png`,
+    'iot-temperature': `${import.meta.env.BASE_URL}assets/images/06.png`,
+    'Football League Database Project': `${import.meta.env.BASE_URL}assets/images/08.png`,
+    'smart-classroom': `${import.meta.env.BASE_URL}assets/images/02.png`
+   };
+   return imageMap?.[projectId] || `${import.meta.env.BASE_URL}assets/images/default.jpg`;
   };
+
   
   const getTechIcon = (tech) => {
     const iconMap = {
